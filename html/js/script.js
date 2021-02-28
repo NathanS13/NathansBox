@@ -34,15 +34,18 @@ document.getElementById('enterCommandText').onkeydown = function(e){
 
             default:
                 console.log("in default")
-   }
-}
-
-   /*if(e.keyCode == 13){
-     document.getElementById("enterCommand").click();
-     console.log(document.getElementById('enterCommandText2').value);
-   }
-   */
+        }
+    }
 };
+
+document.getElementById('enterCommandText').onmousedown = function(e){
+    document.getElementById('enterCommandText').value = "";
+};
+
+
+
+
+
 /*
 var input = document.getElementById("enterCommandText");
 input.addEventListener("keydown", function(event) {
