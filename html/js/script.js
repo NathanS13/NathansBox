@@ -30,12 +30,15 @@ document.getElementById('enterCommandText').onkeydown = function(e){
         input = input.split("  ").pop()
 
         console.log("in enter: " + input)
-        switch(terminalString + input.toLowerCase()) {
-            case (terminalString + "test"):
+        switch(input.toLowerCase()) {
+            case ("test"):
                 console.log("we found test!");
                 document.getElementById("enterCommand").click();
             break;
-
+            case ("test2"):
+                console.log("we found test!");
+                document.getElementById("enterCommand2").click();
+            break;
             default:
                 console.log("in default")
                 
