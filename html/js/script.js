@@ -10,6 +10,9 @@ $('input[type="enterCommandText"]').keypress(function (e) {
     window.location.replace("http://www.w3schools.com");
 });
 */
+var terminalString = "user@Nathans_Box $  "
+var commandFlag = false;
+var finalInput;
 document.getElementById('enterCommandText').onkeydown = function(e){
     console.log("fasdas");
     if(e.keyCode == 13){
@@ -19,27 +22,40 @@ document.getElementById('enterCommandText').onkeydown = function(e){
     }
 };
 document.getElementById('enterCommandText').onkeydown = function(e){
-    var input = document.getElementById('enterCommandText').value;
-    if(e.keyCode == 13){
-        var rawInput = document.getElementById('enterCommandText').value.split('\n');
+    var rawInput = document.getElementById('enterCommandText').value;
+    if(e.keyCode == 13) {
+        var input = document.getElementById('enterCommandText').value.split('\n');
         console.log("in pop: " + rawInput)
-        input = rawInput.pop();
+        input = input.pop();
+        input = input.split("  ").pop()
 
         console.log("in enter: " + input)
-        switch(input.toLowerCase()) {
-            case "test":
+        switch(terminalString + input.toLowerCase()) {
+            case (terminalString + "test"):
                 console.log("we found test!");
                 document.getElementById("enterCommand").click();
             break;
 
             default:
                 console.log("in default")
+                
         }
+        commandFlag = true;
+        finalInput = rawInput;
     }
+
+};
+
+document.getElementById('enterCommandText').onkeyup = function(e){
+    if(commandFlag) {
+        document.getElementById('enterCommandText').value = finalInput + "\nuser@Nathans_Box $  ";
+        commandFlag = false;
+    }
+
 };
 
 document.getElementById('enterCommandText').onmousedown = function(e){
-    document.getElementById('enterCommandText').value = "";
+    document.getElementById('enterCommandText').value = "user@Nathans_Box $  ";
 };
 
 
