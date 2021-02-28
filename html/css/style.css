@@ -25,3 +25,7 @@ body {
     font-family: 'Mukta', sans-serif;
     color: var(--light-text);
 }
+
+#enterCommandText {
+    color: black;
+}

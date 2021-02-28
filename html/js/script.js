@@ -1,7 +1,8 @@
-var input = document.getElementById("enterCommand");
+var input = document.getElementById("enterCommandText");
 input.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
         event.preventDefault();
-        document.getElementById("myBtn").click();
+        document.getElementById("enterCommand").click();
+        console.log("Success?")
     }
 });
