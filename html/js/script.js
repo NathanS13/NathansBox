@@ -23,7 +23,7 @@ document.getElementById('enterCommandText').onkeydown = function(e){
 };
 document.getElementById('enterCommandText').onkeydown = function(e){
     var rawInput = document.getElementById('enterCommandText').value;
-    if(e.keyCode == 13) {
+    if(e.key === 'Enter') {
         var input = document.getElementById('enterCommandText').value.split('\n');
         console.log("in pop: " + rawInput)
         input = input.pop();
