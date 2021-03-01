@@ -27,7 +27,7 @@ document.getElementById('enterCommandText').onkeydown = function(e){
         var input = document.getElementById('enterCommandText').value.split('\n');
         console.log("in pop: " + rawInput)
         input = input.pop();
-        input = input.split("  ").pop()
+        input = input.split("  ").pop();
 
         console.log("in enter: " + input)
         switch(input.toLowerCase()) {

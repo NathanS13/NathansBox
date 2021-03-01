@@ -1,75 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html>
 
 <head>
     <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <!-- Bootstrap-->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
-
     <!-- Title -->
     <title>Nathan's Box</title>
 </head>
 
 <body>
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-4 rectangle2"></div>
-                <div class="col-md-3 rectangle2">
-                    <p>user@NathansBox: ~</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row rectangle">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-3 rectangle2">
+                        <p>user@NathansBox: ~</p>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-2">
+                        <!--div class="row circleRow">
+                            <div class="col-md-4 circle circle1"></div>
+                            <div class="col-md-4 circle circle2"></div>
+                            <div class="col-md-4 circle circle3"></div>
+                        </div-->
+                    </div>
                 </div>
-                <div class="col-md-3 rectangle2"></div>
-                <div class="col-md-2 rectangle2">
-                    <!--div class="row circleRow">
-                        <div class="col-md-4 circle circle1"></div>
-                        <div class="col-md-4 circle circle2"></div>
-                        <div class="col-md-4 circle circle3"></div>
-                    </div-->
+                <div class="row">
+                    <div class="col-md-12 wrapperCommand">
+                        <textarea class="wrapperCommand" id="enterCommandText" rows="4" cols="50" placeholder="Enter a command here.. (try 'test')"></textarea>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <textarea id="enterCommandText" rows="4" cols="50" placeholder="Enter a command here.. (try 'test')"></textarea>
+            <div class="col-md-6">
+                <form action="common/test.html">
+                    <p>you can click or type in these buttons to different sections!</p>
+                    <input id="enterCommand" type="submit" value="test">
+                </form>
+                <form action="common/test2.html">
+                    <input id="enterCommand2" type="submit" value="test2">
+                </form>
             </div>
-        </div>
-        <div class="col-md-6">
-            <form action="common/test.html">
-                <p>you can click or type in these buttons to different sections!</p>
-                <input id="enterCommand" type="submit" value="test">
-            </form>
-            <form action="common/test2.html">
-                <input id="enterCommand2" type="submit" value="test2">
-            </form>
-            
         </div>
     </div>
-</div>
+    <!--custom java script-->
+    <script src="js/script.js"></script>
 
-
-<!--custom java script-->
-<script src="js/script.js"></script>
 
 </body>
-
-
-
-
-
-
-
 
 </html>
