@@ -37,12 +37,26 @@ body {
     font-family: 'Mukta', sans-serif;
     color: var(--light-text);
     margin:0;padding:0;border:none;
+
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    height: 5rem;
+    width: 100vw;
+    background-color: var(--crt-grey);
+    color: var(--light-text);
 }
 
 .wrapperCommand {
     width: 100%;
     padding: 0;
-    height: 100vh;
+    height: 50vh;
     border: none;
     overflow: auto;
     outline: none;
