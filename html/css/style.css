@@ -19,6 +19,7 @@
     --box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 }
 
+/*
 * {
     margin: 0;
     font-size: 16px;
@@ -26,6 +27,7 @@
     padding: 0;
     border: none;
 }
+*/
 /*
 html {
     height: 100%;
@@ -36,7 +38,7 @@ body {
     background-color: var(--off-blue);
     font-family: 'Mukta', sans-serif;
     color: var(--light-text);
-    margin:0;padding:0;border:none;
+    /*margin:0;padding:0;border:none;*/
 
 }
 
@@ -74,7 +76,6 @@ footer {
     height: 35px;
     max-height: 35px;
     min-height: 35px;
-    /*width: 100%;*/
     background-color: var(--terminal-bar);
 }
 
@@ -82,10 +83,6 @@ footer {
     display: table-cell;
     height: 35px;
     vertical-align: middle;
-    /*height: 3.25vh;
-    max-height: 3.25vh;
-    min-height: 3.25vh;
-        */
 }
 
 .circleRow {
@@ -111,4 +108,10 @@ footer {
 
 .circle3 {
     background-color: var(--terminal-green);
+}
+
+#wip {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 40px;
 }
